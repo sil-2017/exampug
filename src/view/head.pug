@@ -1,0 +1,13 @@
+-let headLinks={n:"Готовые наборы",n2:"Собрать свой набор",n3:"Акции",l:{m:"./img/Ellipse 15 (1).svg"},l2:{m:"./img/log.png"},n4:"Каталог десертов ",n5:"Корпоративные подарки",n6:"Оптовикам"}
+
+mixin navhead(headLinks)
+    .head
+        ul
+         each item, key in headLinks
+            if(typeof item === 'string')
+                li= item
+            else
+                li
+                    img(src= item.m)
+
++navhead(headLinks)
