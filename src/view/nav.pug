@@ -1,0 +1,13 @@
+-let navLinks={name:"Свадебные предложения",name2:"Наборы с печатью",name3:"Гарантии вкуса и свежести",name4:"Доставка и оплата",name5:"Контакты",link:{ img:"./img/Vector (5).svg"},name6:"8 812 309-82-88",link2:{img:"./img/Group219.svg"},link4:{img:"./img/Group 2.43.svg"},link5:{img:"./img/Vector2.svg"},link:{img:"./img/Vector3.svg"}}
+
+mixin nav(navLinks)
+    .nav
+        ul
+            each val, key in navLinks
+                if(typeof val === 'string')
+                    li= val
+                else
+                    li
+                        img(src= val.img)
+
++nav(navLinks)
