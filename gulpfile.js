@@ -10,7 +10,7 @@ const gulp = require('gulp'),
         .pipe(pug({
             pretty: true
         }))
-        .pipe(rename('pugIndex.html'))
+        .pipe(rename('index.html'))
         .pipe(gulp.dest('./dist/'))
         .pipe(browsersync.stream())
     }
@@ -44,7 +44,7 @@ const gulp = require('gulp'),
             server:{
                 baseDir:'./dist/',
             },
-            index: "pugIndex.html"
+            index: "index.html"
         });
     }
 

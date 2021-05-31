@@ -1,0 +1,19 @@
+.nav{
+    height:auto;
+    width: 100%;
+    background-color: #F7EBE5;
+    position: relative;
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 50px;
+        // align-items: center;
+        justify-content: space-around;
+
+            li{
+                margin: 0 3px;
+            }
+    }
+}
