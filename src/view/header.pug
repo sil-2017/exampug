@@ -1,0 +1,14 @@
+-let  data = [{icon:'img/Group215.svg'},{icon:'img/Group217.svg'},{icon:'img/Group 111.svg'}];
+-let d = "img/Group 213.svg";
+-let t = 'ДОСТАВКА В ДЕНЬ ЗАКАЗА';
+
+header 
+    .header 
+        .header-line
+                img(src= d)
+                | #{t}
+        each item in data
+            .header-line
+                img(src=item.icon)
+
+            
